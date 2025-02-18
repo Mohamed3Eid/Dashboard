@@ -56,7 +56,6 @@ If you want to modify the TailwindCSS configuration, follow these steps:
 │ │ ├── main.css (compiled TailwindCSS file)
 │ ├── 📂 pages
 │ │ ├── index.html
-├
 ├── README.md
 ├── package.json (if using npm for dependencies)
 
