@@ -51,13 +51,13 @@ If you want to modify the TailwindCSS configuration, follow these steps:
 ## Project Structure
 
 📂 your-repo-name
-├── 📂 assets
+├── 📂src
 │ ├── 📂 css
-│ │ ├── styles.css (compiled TailwindCSS file)
-│ ├── 📂 images
-├── index.html
+│ │ ├── main.css (compiled TailwindCSS file)
+│ ├── 📂 pages
+│ │ ├── index.html
+├
 ├── README.md
-├── tailwind.config.js (if using Tailwind customization)
 ├── package.json (if using npm for dependencies)
 
 ## License
