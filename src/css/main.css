@@ -1,9 +1,57 @@
 @import "tailwindcss";
 
-/* start font google */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @theme {
   --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-/* end font google */
+
+@theme {
+  --color-primary: #0075ff;
+  --color-secondary: #0d69d5;
+  --color-danger: #f44336;
+  --color-success: #f59e0b;
+  --color-warning: #f59e0b;
+  --color-info: #888;
+}
+
+@layer components {
+  h1,
+  .h1 {
+  }
+
+  h2,
+  .h2 {
+  }
+
+  h3,
+  .h3 {
+    @apply text-base md:text-2xl font-bold capitalize;
+  }
+
+  h4,
+  .h4 {
+  }
+}
+
+@layer utilities {
+  .box-shadow {
+    box-shadow: 0 0 10px #ddd;
+  }
+
+  .active {
+    @apply bg-[#f6f6f6];
+  }
+
+  .center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
