@@ -10,19 +10,19 @@
     <!-- start pages -->
     <div class="flex bg-[#f1f5f9] min-h-[100vh]">
       <!-- start sidebar -->
-      <aside class="sm:w-16 md:w-3xs p-5 bg-white shrink-0 relative box-shadow">
+      <aside class="w- md:w-3xs p-5 bg-white shrink-0 relative box-shadow">
         <h3 class="text-center mb-2">elzero</h3>
-        <div class="flex center-flex mb-12">
+        <div class="hidden md:flex center-flex mb-7">
           <span class="w-10 h-0.5 bg-black inline-block"></span>
           <span
-            class="w-4 h-4 rounded-full inline-block bg-black border-2 border-white"
+            class="w-5 h-5 rounded-full inline-block bg-black border-4 border-white"
           ></span>
           <span class="w-10 h-0.5 bg-black inline-block"></span>
         </div>
         <ul>
           <li>
             <a
-              class="active center-flex md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
+              class="active flex items-center md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
               href="index.html"
             >
               <svg
@@ -40,7 +40,7 @@
 
           <li>
             <a
-              class="center-flex md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
+              class="flex items-center md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
               href="setting.html"
             >
               <svg
@@ -58,7 +58,7 @@
 
           <li>
             <a
-              class="center-flex md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
+              class="flex items-center md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
               href="profile.html"
             >
               <svg
@@ -76,7 +76,7 @@
 
           <li>
             <a
-              class="center-flex md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
+              class="flex items-center md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
               href="projects.html"
             >
               <svg
@@ -94,7 +94,7 @@
 
           <li>
             <a
-              class="center-flex md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
+              class="flex items-center md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
               href="courses.html"
             >
               <svg
@@ -112,7 +112,7 @@
 
           <li>
             <a
-              class="center-flex md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
+              class="flex items-center md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
               href="friends.html"
             >
               <svg
@@ -130,7 +130,7 @@
 
           <li>
             <a
-              class="center-flex md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
+              class="flex items-center md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
               href="files.html"
             >
               <svg
@@ -148,7 +148,7 @@
 
           <li>
             <a
-              class="center-flex md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
+              class="flex items-center md:justify-start text-black p-2.5 rounded-md ease-[.3s] mb-1.5 hover:bg-[#f6f6f6]"
               href="plans.html"
             >
               <svg
@@ -167,40 +167,42 @@
       </aside>
       <!-- end sidebar -->
       <!-- start content -->
-      <div class="w-full">
+      <div class="w-full overflow-hidden">
         <!-- start head -->
-        <div class="bg-white p-3.5 between-flex">
+        <div class="bg-white p-3.5 flex between-flex">
           <!-- start search -->
           <div class="relative">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
-              class="absolute start-4 top-1/2 -translate-y-1/2 w-[14px] h-[14px] text-info"
+              class="absolute start-2 md:start-4 top-1/2 -translate-y-1/2 w-[14px] h-[14px] text-info"
             >
               <path
                 d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
               />
             </svg>
             <input
-              class="w-[170px] p-2.5 border border-[#ccc] rounded-xl ms-1.5 ps-7 transition-[width] duration-[0.3s] focus:outline-[#ddd] focus:w-[210px] focus:placeholder:opacity-0 caret-[#ddd]"
+              class="w-[135px] p-1.5 text-sm ps-6 md:w-[170px] md:p-2.5 md:ms-1.5 md:ps-8 md:text-base border border-[#ccc] rounded-xl transition-[width] duration-[0.3s] focus:outline-[#ddd] focus:w-[210px] focus:placeholder:opacity-0 caret-[#ddd]"
               placeholder="Type A Keyword"
             />
           </div>
           <!-- end search -->
           <!-- start icons -->
-          <div class="center-flex">
-            <span>
+          <div class="flex center-flex">
+            <span
+              class="relative before:absolute before:content-[''] before:bg-danger before:w-2.5 before:h-2.5 before:rounded-full before:top-[-5px] before:end-[-5px]"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
-                class="w-4 h-4"
+                class="w-5 h-5"
               >
                 <path
                   d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416l384 0c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8l0-18.8c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"
                 />
               </svg>
             </span>
-            <img src="../imgs/avatar.png" alt="" />
+            <img src="../imgs/avatar.png" alt="" class="w-8 h-8 ms-3.5" />
           </div>
           <!-- end icons -->
         </div>
@@ -209,8 +211,5 @@
       <!-- end content -->
     </div>
     <!-- end pages -->
-    <div>
-      <h3 class="text-center mb-4">Dashboard</h3>
-    </div>
   </body>
 </html>
