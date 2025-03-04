@@ -217,11 +217,11 @@
         </h1>
         <!-- end head -->
         <!-- start wrapper -->
-        <div class="grid gap-2.5 md:gap-5 md:grid-cols-1 xl:grid-cols-2">
+        <div
+          class="mx-2.5 md:mx-5 grid gap-2.5 md:gap-5 md:grid-cols-1 xl:grid-cols-2"
+        >
           <!-- start welcome -->
-          <div
-            class="bg-white text-center rounded-lg overflow-hidden mx-2.5 md:mx-5"
-          >
+          <div class="bg-white text-center rounded-lg overflow-hidden">
             <!-- start intro -->
             <div class="p-5 bg-[#eee] flex justify-between">
               <div>
@@ -263,12 +263,38 @@
             <!-- start visit -->
             <a
               href="profile.html"
-              class="block bg-primary text-white w-fit ms-auto me-4 mb-4 py-1 px-2.5 rounded-md"
+              class="block bg-primary text-white w-fit ms-auto me-4 mb-4 btn-shape hover:bg-secondary transition"
               >Profile</a
             >
             <!-- end visit -->
           </div>
           <!-- end welcome -->
+          <!-- start quick -->
+          <div class="p-5 bg-white rounded-lg">
+            <h2 class="mb-2.5">quick draft</h2>
+            <p class="capitalize text-[15px] text-info mb-5">
+              write a draft for your ideas
+            </p>
+            <form action="">
+              <input
+                type="text"
+                placeholder="Title"
+                class="block bg-[#eee] mb-5 p-2.5 w-full rounded-lg outline-none caret-primary focus:placeholder:opacity-0"
+              />
+              <textarea
+                name=""
+                id=""
+                placeholder="Your Thought"
+                class="block bg-[#eee] p-2.5 mb-5 w-full h-36 rounded-lg outline-none caret-primary focus:placeholder:opacity-0"
+              ></textarea>
+              <input
+                type="submit"
+                value="Save"
+                class="bg-primary text-white block w-fit text-sm btn-shape ms-auto transition hover:bg-secondary"
+              />
+            </form>
+          </div>
+          <!-- end quick -->
         </div>
         <!-- end wrapper -->
       </div>

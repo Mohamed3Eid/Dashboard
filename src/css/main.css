@@ -37,24 +37,6 @@
 }
 
 @layer utilities {
-  .box-shadow {
-    box-shadow: 0 0 10px #ddd;
-  }
-
-  .active {
-    @apply bg-[#f6f6f6];
-  }
-
-  .center-flex {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .between-flex {
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .scrollbar::-webkit-scrollbar {
     width: 15px;
   }
@@ -69,5 +51,28 @@
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
     background: var(--color-secondary);
+  }
+
+  .btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .active {
+    @apply bg-[#f6f6f6];
+  }
+
+  .box-shadow {
+    box-shadow: 0 0 10px #ddd;
+  }
+
+  .center-flex {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .between-flex {
+    justify-content: space-between;
+    align-items: center;
   }
 }
