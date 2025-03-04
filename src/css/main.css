@@ -49,4 +49,20 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary);
+  }
 }
