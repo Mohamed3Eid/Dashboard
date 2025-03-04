@@ -217,10 +217,10 @@
         </h1>
         <!-- end head -->
         <!-- start wrapper -->
-        <div class="grid gap-2.5 md:grid-cols-12 md:gap-5">
+        <div class="grid gap-2.5 md:gap-5 md:grid-cols-1 xl:grid-cols-2">
           <!-- start welcome -->
           <div
-            class="bg-white text-center rounded-lg mx-2.5 md:mx-5 md:col-span-12 xl:col-span-6"
+            class="bg-white text-center rounded-lg overflow-hidden mx-2.5 md:mx-5"
           >
             <!-- start intro -->
             <div class="p-5 bg-[#eee] flex justify-between">
@@ -228,11 +228,45 @@
                 <h2>welcome</h2>
                 <p class="capitalize md:text-start text-info">elzero</p>
               </div>
-              <div class="hidden md:block h-[100px] shrink-0">
+              <div class="hidden w-[170px] md:block">
                 <img src="../imgs/welcome.png" alt="" />
               </div>
             </div>
             <!-- end intro -->
+            <!-- start avatar -->
+            <img
+              src="../imgs/avatar.png"
+              alt=""
+              class="w-16 h-16 rounded-full border-2 border-white m-auto md:ms-5 mt-[-32px] p-0.5"
+            />
+            <!-- end avatar -->
+            <!-- start body -->
+            <div
+              class="p-5 my-5 border-t border-b border-[#eee] md:flex md:justify-between"
+            >
+              <div class="mb-5">
+                <h4>osama elzero</h4>
+                <p class="text-info">Developer</p>
+              </div>
+
+              <div class="mb-5">
+                <h4>80</h4>
+                <p class="text-info">Projects</p>
+              </div>
+
+              <div>
+                <h4>$8500</h4>
+                <p class="text-info">Earned</p>
+              </div>
+            </div>
+            <!-- end body -->
+            <!-- start visit -->
+            <a
+              href="profile.html"
+              class="block bg-primary text-white w-fit ms-auto me-4 mb-4 py-1 px-2.5 rounded-md"
+              >Profile</a
+            >
+            <!-- end visit -->
           </div>
           <!-- end welcome -->
         </div>
