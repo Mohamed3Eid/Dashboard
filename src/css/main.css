@@ -58,6 +58,11 @@
     border-radius: 6px;
   }
 
+  .input-focus {
+    opacity: 0;
+    transition: 0.3s;
+  }
+
   .active {
     @apply bg-[#f6f6f6];
   }
