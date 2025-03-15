@@ -1,9 +1,83 @@
 @import "tailwindcss";
 
-/* start font google */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @theme {
   --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-/* end font google */
+
+@theme {
+  --color-primary: #0075ff;
+  --color-secondary: #0d69d5;
+  --color-danger: #f44336;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-info: #888;
+}
+
+@layer components {
+  h1,
+  .h1 {
+    @apply text-3xl md:text-4xl font-bold capitalize mt-5 ms-5 mb-10;
+  }
+  h2,
+  .h2 {
+    @apply text-2xl md:text-3xl font-bold capitalize;
+  }
+
+  h3,
+  .h3 {
+    @apply text-base md:text-2xl font-bold capitalize;
+  }
+
+  h4,
+  .h4 {
+    @apply text-base md:text-xl font-semibold capitalize;
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary);
+  }
+
+  .btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .input-focus {
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .active {
+    @apply bg-[#f6f6f6];
+  }
+
+  .box-shadow {
+    box-shadow: 0 0 10px #ddd;
+  }
+
+  .center-flex {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .between-flex {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
