@@ -37,8 +37,20 @@
 }
 
 @layer utilities {
-  .scrollbar {
-    @apply overflow-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-gray-200;
+  .scrollbar::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary);
   }
 
   .btn-shape {
