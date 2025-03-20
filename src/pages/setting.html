@@ -478,7 +478,7 @@
 
             <!-- start box-youtube -->
             <div
-              class="bg-[#f6f6f6] ps-2 mb-3.5 border border-gray-300 rounded-md group"
+              class="bg-[#f6f6f6] ps-2 border border-gray-300 rounded-md group"
             >
               <label for="youtube" class="flex items-center gap-1 w-20">
                 <svg
@@ -502,9 +502,130 @@
             <!-- end box-youtube -->
           </div>
           <!--end social info -->
+
+          <!-- start control -->
+          <div class="bg-white p-5 rounded-lg">
+            <h2 class="mb-2.5">widgets control</h2>
+            <p class="capitalize text-info mb-5">show/hide widgets</p>
+            <form>
+              <div class="relative mb-3">
+                <input type="checkbox" checked id="draft" class="hidden peer" />
+                <label
+                  for="draft"
+                  class="capitalize ps-7 cursor-pointer relative before:absolute before:content-[''] before:w-4 before:h-4 before:start-0 before:top-1 before:border-2 before:border-info before:rounded before:cursor-pointer before:z-10 peer-hover:before:border-primary peer-checked:before:border-primary"
+                  >quick draft</label
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 absolute top-1 start-0 bg-primary fill-white rounded scale-0 peer-checked:scale-100 peer-checked:rotate-360 transition-all duration-300"
+                >
+                  <path
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+              </div>
+
+              <div class="relative mb-3">
+                <input type="checkbox" id="targets" class="hidden peer" />
+                <label
+                  for="targets"
+                  class="capitalize ps-7 cursor-pointer relative before:absolute before:content-[''] before:w-4 before:h-4 before:start-0 before:top-1 before:border-2 before:border-info before:rounded before:cursor-pointer before:z-10 peer-hover:before:border-primary peer-checked:before:border-primary"
+                  >yearly targets</label
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 absolute top-1 start-0 bg-primary fill-white rounded scale-0 peer-checked:scale-100 peer-checked:rotate-360 transition-all duration-300"
+                >
+                  <path
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+              </div>
+
+              <div class="relative mb-3">
+                <input
+                  type="checkbox"
+                  checked
+                  id="statistics"
+                  class="hidden peer"
+                />
+                <label
+                  for="statistics"
+                  class="capitalize ps-7 cursor-pointer relative before:absolute before:content-[''] before:w-4 before:h-4 before:start-0 before:top-1 before:border-2 before:border-info before:rounded before:cursor-pointer before:z-10 peer-hover:before:border-primary peer-checked:before:border-primary"
+                  >tickets statistics</label
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 absolute top-1 start-0 bg-primary fill-white rounded scale-0 peer-checked:scale-100 peer-checked:rotate-360 transition-all duration-300"
+                >
+                  <path
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+              </div>
+
+              <div class="relative mb-3">
+                <input type="checkbox" checked id="news" class="hidden peer" />
+                <label
+                  for="news"
+                  class="capitalize ps-7 cursor-pointer relative before:absolute before:content-[''] before:w-4 before:h-4 before:start-0 before:top-1 before:border-2 before:border-info before:rounded before:cursor-pointer before:z-10 peer-hover:before:border-primary peer-checked:before:border-primary"
+                  >latest news
+                </label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 absolute top-1 start-0 bg-primary fill-white rounded scale-0 peer-checked:scale-100 peer-checked:rotate-360 transition-all duration-300"
+                >
+                  <path
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+              </div>
+
+              <div class="relative mb-3">
+                <input type="checkbox" id="tasks" class="hidden peer" />
+                <label
+                  for="tasks"
+                  class="capitalize ps-7 cursor-pointer relative before:absolute before:content-[''] before:w-4 before:h-4 before:start-0 before:top-1 before:border-2 before:border-info before:rounded before:cursor-pointer before:z-10 peer-hover:before:border-primary peer-checked:before:border-primary"
+                  >latest tasks
+                </label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 absolute top-1 start-0 bg-primary fill-white rounded scale-0 peer-checked:scale-100 peer-checked:rotate-360 transition-all duration-300"
+                >
+                  <path
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+              </div>
+
+              <div class="relative">
+                <input type="checkbox" checked id="items" class="hidden peer" />
+                <label
+                  for="items"
+                  class="capitalize ps-7 cursor-pointer relative before:absolute before:content-[''] before:w-4 before:h-4 before:start-0 before:top-1 before:border-2 before:border-info before:rounded before:cursor-pointer before:z-10 peer-hover:before:border-primary peer-checked:before:border-primary"
+                  >top search items
+                </label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 absolute top-1 start-0 bg-primary fill-white rounded scale-0 peer-checked:scale-100 peer-checked:rotate-360 transition-all duration-300"
+                >
+                  <path
+                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  />
+                </svg>
+              </div>
+            </form>
+          </div>
+          <!-- end control -->
         </div>
         <!-- end wrapper -->
-        <div class="h-screen"></div>
+        <div class="h-96"></div>
       </div>
       <!-- end content -->
     </div>
