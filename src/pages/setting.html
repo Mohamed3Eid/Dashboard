@@ -218,7 +218,7 @@
         <!-- end head -->
         <!-- start wrapper -->
         <div
-          class="mx-2 md:mx-5 grid gap-2.5 md:gap-5 md:grid-cols-1 xl:grid-cols-2"
+          class="mx-2 mb-5 md:mx-5 grid gap-2.5 md:gap-5 md:grid-cols-1 xl:grid-cols-2"
         >
           <!-- start site control -->
           <div class="bg-white p-5 rounded-lg">
@@ -623,9 +623,131 @@
             </form>
           </div>
           <!-- end control -->
+
+          <!-- start manger -->
+          <div class="bg-white p-5 rounded-lg">
+            <h2 class="mb-2.5">backup manager</h2>
+            <p class="capitalize text-info mb-3">
+              control backup time and location
+            </p>
+            <form class="pb-5 border-b border-gray-300">
+              <div class="relative mb-3">
+                <input
+                  type="radio"
+                  id="daily"
+                  name="time"
+                  class="sr-only peer"
+                />
+                <label
+                  for="daily"
+                  class="capitalize ps-7 cursor-pointer relative before:absolute before:content-[''] before:w-5 before:h-5 before:rounded-full before:start-0 before:top-1 before:border-2 before:border-info before:cursor-pointer before:z-10 peer-hover:before:border-primary peer-checked:before:border-primary after:absolute after:content-[''] after:w-2.5 after:h-2.5 after:rounded-full after:bg-primary after:start-[5PX] after:top-[9PX] after:scale-0 peer-checked:after:scale-110 peer-checked:after:transition peer-checked:after:duration-300"
+                  >daily</label
+                >
+              </div>
+
+              <div class="relative mb-3">
+                <input
+                  type="radio"
+                  id="weekly"
+                  name="time"
+                  class="sr-only peer"
+                  checked
+                />
+                <label
+                  for="weekly"
+                  class="capitalize ps-7 cursor-pointer relative before:absolute before:content-[''] before:w-5 before:h-5 before:rounded-full before:start-0 before:top-1 before:border-2 before:border-info before:cursor-pointer before:z-10 peer-hover:before:border-primary peer-checked:before:border-primary after:absolute after:content-[''] after:w-2.5 after:h-2.5 after:rounded-full after:bg-primary after:start-[5PX] after:top-[9PX] after:scale-0 peer-checked:after:scale-110 peer-checked:after:transition peer-checked:after:duration-300"
+                  >weekly
+                </label>
+              </div>
+
+              <div class="relative">
+                <input
+                  type="radio"
+                  id="monthly"
+                  name="time"
+                  class="sr-only peer"
+                />
+                <label
+                  for="monthly"
+                  class="capitalize ps-7 cursor-pointer relative before:absolute before:content-[''] before:w-5 before:h-5 before:rounded-full before:start-0 before:top-1 before:border-2 before:border-info before:cursor-pointer before:z-10 peer-hover:before:border-primary peer-checked:before:border-primary after:absolute after:content-[''] after:w-2.5 after:h-2.5 after:rounded-full after:bg-primary after:start-[5PX] after:top-[9PX] after:scale-0 peer-checked:after:scale-110 peer-checked:after:transition peer-checked:after:duration-300"
+                  >monthly</label
+                >
+              </div>
+            </form>
+
+            <form class="mt-6 flex flex-col gap-2 md:flex-row">
+              <div class="w-full">
+                <input id="mega" type="radio" name="meg" class="sr-only peer" />
+                <label
+                  for="mega"
+                  class="p-5 rounded-lg border-2 border-gray-300 cursor-pointer grid place-items-center peer-checked:border-primary peer-checked:text-primary group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="w-4 h-4 group-peer-checked:fill-primary"
+                  >
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 32zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 288zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"
+                    />
+                  </svg>
+                  Megaman
+                </label>
+              </div>
+
+              <div class="w-full">
+                <input
+                  id="zero"
+                  type="radio"
+                  name="meg"
+                  checked
+                  class="sr-only peer"
+                />
+                <label
+                  for="zero"
+                  class="p-5 rounded-lg border-2 border-gray-300 cursor-pointer grid place-items-center peer-checked:border-primary peer-checked:text-primary group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="w-4 h-4 group-peer-checked:fill-primary"
+                  >
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 32zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 288zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"
+                    />
+                  </svg>
+                  zero
+                </label>
+              </div>
+
+              <div class="w-full">
+                <input
+                  id="sigma"
+                  type="radio"
+                  name="meg"
+                  class="sr-only peer"
+                />
+                <label
+                  for="sigma"
+                  class="p-5 rounded-lg border-2 border-gray-300 cursor-pointer grid place-items-center peer-checked:border-primary peer-checked:text-primary group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="w-4 h-4 group-peer-checked:fill-primary"
+                  >
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 32zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 288zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"
+                    />
+                  </svg>
+                  sigma
+                </label>
+              </div>
+            </form>
+          </div>
+          <!-- end manger -->
         </div>
         <!-- end wrapper -->
-        <div class="h-96"></div>
       </div>
       <!-- end content -->
     </div>
