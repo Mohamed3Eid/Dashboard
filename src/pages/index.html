@@ -289,7 +289,7 @@
                 name=""
                 id=""
                 placeholder="Your Thought"
-                class="block bg-gray-200 p-2.5 mb-5 w-full h-36 rounded-lg outline-none caret-primary placeholder:transition placeholder:duration-300 focus:placeholder:opacity-0"
+                class="block bg-gray-200 p-2.5 mb-5 w-full h-36 rounded-lg resize-none outline-none caret-primary placeholder:transition placeholder:duration-300 focus:placeholder:opacity-0"
               ></textarea>
               <input
                 type="submit"
@@ -536,7 +536,7 @@
               </div>
               <!-- end info -->
               <!-- start btn -->
-              <div class="">
+              <div>
                 <p class="text-[13px] capitalize btn-shape bg-gray-200">
                   3 days ago
                 </p>
@@ -567,7 +567,7 @@
               </div>
               <!-- end info -->
               <!-- start btn -->
-              <div class="">
+              <div>
                 <p class="text-[13px] capitalize btn-shape bg-gray-200">
                   5 days ago
                 </p>
@@ -598,7 +598,7 @@
               </div>
               <!-- end info -->
               <!-- start btn -->
-              <div class="">
+              <div>
                 <p class="text-[13px] capitalize btn-shape bg-gray-200">
                   7 days ago
                 </p>
@@ -629,7 +629,7 @@
               </div>
               <!-- end info -->
               <!-- start btn -->
-              <div class="">
+              <div>
                 <p class="text-[13px] capitalize btn-shape bg-gray-200">
                   9 days ago
                 </p>
@@ -944,7 +944,7 @@
           <div class="bg-white p-5 rounded-lg relative">
             <h2>last project progress</h2>
             <ul
-              class="relative before:absolute before:w-0.5 before:h-[calc(100%-26px)] before:bg-primary"
+              class="relative before:absolute before:w-0.5 before:top-0 before:bottom-6.5 before:bg-primary"
             >
               <li
                 class="capitalize mt-6 ps-6 before:absolute before:content-[''] before:w-5 before:h-5 before:rounded-full before:bg-primary before:start-[-9px] before:border-2 before:border-white before:outline-2 before:outline-primary"
@@ -957,7 +957,7 @@
                 started the project
               </li>
               <li
-                class="capitalize mt-6 ps-6 before:absolute before:content-[''] before:w-5 before:h-5 before:rounded-full before:bg-primary before:start-[-9px] before:border-2 before:border-white before:outline-2 before:outline-primary"
+                class="capitalize mt-6 ps-6 before:absolute before:content-[''] before:w-5 before:h-5 before:rounded-full before:bg-cyan-500 before:start-[-9px] before:border-2 before:border-white before:outline-2 before:outline-primary"
               >
                 the project about to finish
               </li>
@@ -967,11 +967,12 @@
                 test the project
               </li>
               <li
-                class="capitalize mt-6 ps-6 before:absolute before:content-[''] before:w-5 before:h-5 before:rounded-full before:start-[-9px] before:border-2 before:border-white before:outline-2 before:outline-primary"
+                class="capitalize mt-6 ps-6 before:absolute before:content-[''] before:w-5 before:h-5 before:rounded-full before:start-[-9px] before:border-2 before:border-white before:outline-2 before:outline-primary before:bg-cyan-500"
               >
                 finish the project & get money
               </li>
             </ul>
+
             <div
               class="hidden md:block absolute content[''] end-0 bottom-0 w-[160px] opacity-20"
             >
@@ -1094,7 +1095,7 @@
             <h2 class="mb-6">social media stats</h2>
             <!-- start box-twitter -->
             <div
-              class="bg-[rgb(29,161,242,20%)] flex gap-2 md:gap-5 items-center pe-2 md:pe-4"
+              class="bg-[rgb(29,161,242,20%)] flex gap-1 md:gap-5 items-center pe-2 md:pe-4"
             >
               <div
                 class="bg-[#1da1f2] w-[52px] h-[52px] shrink-0 p-2 grid place-items-center transition duration-300 hover:rotate-6"
@@ -1117,7 +1118,7 @@
 
             <!-- start box-facebook -->
             <div
-              class="bg-[rgb(24,119,242,20%)] flex gap-2 md:gap-5 items-center pe-2 md:pe-4"
+              class="bg-[rgb(24,119,242,20%)] flex gap-1 md:gap-5 items-center pe-2 md:pe-4"
             >
               <div
                 class="bg-[rgb(24,119,242)] w-[52px] h-[52px] shrink-0 p-2 grid place-items-center transition duration-300 hover:rotate-6"
@@ -1140,7 +1141,7 @@
 
             <!-- start box-youtube -->
             <div
-              class="bg-[rgb(255,0,0,20%)] flex gap-2 md:gap-5 items-center pe-2 md:pe-4"
+              class="bg-[rgb(255,0,0,20%)] flex gap-1 md:gap-5 items-center pe-2 md:pe-4"
             >
               <div
                 class="bg-[#ff0000] w-[52px] h-[52px] shrink-0 p-2 grid place-items-center transition duration-300 hover:rotate-6"
@@ -1163,7 +1164,7 @@
 
             <!-- start box-linkedin -->
             <div
-              class="bg-[rgb(0,119,181,20%)] flex gap-2 md:gap-5 items-center pe-2 md:pe-4"
+              class="bg-[rgb(0,119,181,20%)] flex gap-1 md:gap-5 items-center pe-2 md:pe-4"
             >
               <div
                 class="bg-[#0077b5] w-[52px] h-[52px] shrink-0 p-2 grid place-items-center transition duration-300 hover:rotate-6"
@@ -1187,21 +1188,19 @@
           </div>
           <!-- end social-media -->
 
-          <!-- start projects -->
+          <!-- start projects-table -->
           <div class="bg-white rounded-lg p-5 mb-5 grid col-span-full">
             <h2 class="mb-5">projects</h2>
             <div class="overflow-x-auto">
-              <table class="text-[15px] min-w-[1000px] w-full">
+              <table class="text-[15px] min-w-[1000px] w-full border-collapse">
                 <thead>
-                  <tr>
-                    <td class="p-4 font-bold capitalize bg-gray-200">name</td>
-                    <td class="p-3.5 font-bold capitalize bg-gray-200">
-                      finish date
-                    </td>
-                    <td class="p-4 font-bold capitalize bg-gray-200">client</td>
-                    <td class="p-4 font-bold capitalize bg-gray-200">price</td>
-                    <td class="p-4 font-bold capitalize bg-gray-200">team</td>
-                    <td class="p-4 font-bold capitalize bg-gray-200">status</td>
+                  <tr class="bg-gray-200 border-s border-e border-gray-200">
+                    <th class="p-4 font-bold capitalize">name</th>
+                    <th class="p-4 font-bold capitalize">finish date</th>
+                    <th class="p-4 font-bold capitalize">client</th>
+                    <th class="p-4 font-bold capitalize">price</th>
+                    <th class="p-4 font-bold capitalize">team</th>
+                    <th class="p-4 font-bold capitalize">status</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1509,7 +1508,7 @@
               </table>
             </div>
           </div>
-          <!-- end projects -->
+          <!-- end projects-table -->
         </div>
         <!-- end wrapper -->
       </div>
