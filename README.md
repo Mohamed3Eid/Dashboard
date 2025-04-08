@@ -21,7 +21,6 @@ A modern, responsive **Dashboard** project built with **HTML5**, **CSS3**, and *
 
 ```bash
 git clone git@github.com:Mohamed3Eid/Dashboard.git
-
 ```
 
 ## Live Demo
